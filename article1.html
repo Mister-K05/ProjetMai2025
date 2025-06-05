@@ -2,62 +2,76 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Article 1 - Mon Blog</title>
+    <title>À propos - Mon Blog</title>
     <link rel="stylesheet" href="MonBlog.css">
 </head>
 <body>
     <header>
-        <h1>Mon Blog</h1>
-        <nav>
+        <input type="checkbox"
+        id="menu-toggle">
+        <label for="menu-toggle" class="menu-icon">
+            <span></span>
+            <span></span>
+            <span></span>
+        </label>
+        <nav class="menu">
             <ul>
                 <li><a href="index.html">Accueil</a></li>
-                <li><a href="about.html">A propos</a></li>
-                <li><a href="contact.html">Contact</a></li>
+                 <li><a href="about.html">À propos</a></li>
+                  <li><a href="contact.html">contact</a></li>
             </ul>
         </nav>
     </header>
+    <main>
+        <article class="article-detail">
+            <h1>Titre de l'article</h1>
+            <p>Publié le 4 juin 2025 par <strong>Junior</strong></p>
+            <img src="article1.jpg" alt="image de l'article">
 
-    <main class="article-page">
-        <article>
-            <h2>Titre complet de l'article 1</h2>
-            <p class="meta">Publié le 30 mai 2025 par Jean</p>
-            <img src="article1.jpg" alt="article 1">
-            <p>Contenu complet de l'article...</p>
+            <section class="content">
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Natus, necessitatibus perferendis quod doloremque maxime in vitae rem enim optio libero eaque cum esse, similique nesciunt quia reprehenderit iure. Ea, exercitationem?</p>
+            </section>
+
+            <section class="share">
+                <h3>Partager cet article :</h3>
+                <div class="social-icons">
+                    <a href="#"><img src="icons8-facebook-logo-94.png" alt="Facebook"></a>
+                     <a href="#"><img src="icons8-whatsapp-logo-94.png" alt="whatssap"></a>
+                      <a href="#"><img src="icons8-instagram-logo-94.png" alt="instagram"></a>
+                       <a href="#"><img src="icons8-x-logo-50.png" alt="x"></a>
+                </div>
+            </section>
+
+            <section class="comments">
+                <h3>Commentaires</h3>
+
+                <div class="comment">
+                    <p>Très bon article, merci.</p>
+                </div>
+                <form class="comment-form" action="#"
+            method="post">
+        <label for="nom">Nom</label>
+        <input type="text" id="nom"
+        name="nom" required>
+
+        <label for="commentaire">Commentaire</label>
+       <textarea name="commentaire" id="commentaire"
+       rows="4" required></textarea>
+       <button type="submit">Envoyer</button>
+    </form>
+            </section>
         </article>
-
-        <section class="social-share">
-            <h3> Partager :</h3>
-            <a href="#"><img src="facebook.png" alt="Facebook"></a>
-            <a href="#"><img src="instagram.png" alt="Instagram"></a>
-            <a href="#"><img src="x.png" alt="X"></a>
-            <a href="#"><img src="snapchat.png" alt="Snapchat"></a>
-            <a href="#"><img src="whatsapp.png" alt="WhatsApp"></a>            
-
-        </section>
-
-        <section class="comments">
-            <h3>Commentaires</h3>
-            <form>
-                <input type="text"
-                placeholder="Nom" required>
-                <textarea placeholder="Votre commentaire..." required></textarea>
-                <button type="submit">Envoyer</button>
-            </form>
-
-        </section>
     </main>
-    
     <footer>
+        <p>&copy; 2025 Mon Blog. Tous droits réservés.</p>
         <nav>
             <ul>
-                <li><a href="#">Mentions légales</a></li>
-                <li><a href="#">Politique de confidentialité</a></li>
-                <li><a href="#">Plan du site</a></li>
-            </ul>
+                <li><a href="index.html">Accueil</a></li>
+                 <li><a href="about.html">À propos</a></li>
+                  <li><a href="contact.html">contact</a></li>
+                  </ul>
         </nav>
-        <p>&copy; 2025 Mon Blog - Tous droits réservés</p>
     </footer>
 </body>
 </html>

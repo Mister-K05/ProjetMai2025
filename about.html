@@ -2,61 +2,57 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mon Blog - A propos</title>
+    <title>À propos - Mon Blog</title>
     <link rel="stylesheet" href="MonBlog.css">
 </head>
 <body>
     <header>
-        <div class="logo">Mon Blog
-        </div>
-        <nav>
-            <input type="checkbox" id="menu-toggle">
-            <label for="menu-toggle" class="hamburger">Menu
-                <span></span>
-                <span></span>
-                <span></span>
-            </label>
+        <input type="checkbox"
+        id="menu-toggle">
+        <label for="menu-toggle" class="menu-icon">
+            <span></span>
+            <span></span>
+            <span></span>
+        </label>
+        <nav class="menu">
             <ul>
                 <li><a href="index.html">Accueil</a></li>
-                <li><a href="about.html">A propos</a></li>
-                <li><a href="contact.html">Contact</a></li>
+                 <li><a href="about.html">À propos</a></li>
+                  <li><a href="contact.html">contact</a></li>
             </ul>
         </nav>
     </header>
-    
-    <main>
-        <section class="presentation">
-            <h1>A propos du blog</h1>
-            <p>Bienvenue sur mon blog ou je partage mes passions,
-                mes découvertes et mon expertise.
-            </p>
+    <main class="about-page">
+        <section class="about-intro">
+<h1>À propos du blog</h1>
+<p>Bienvenue sur mon blog où je partage mes reflexions,mes découvertes et mes passions. Ce site a été créer pour inspirer informer et rassembler.</p>
         </section>
 
-        <section class="author"><h2>L'auteur</h2>
-        <img src="photo-auteur.jpg"
-         alt="Photo de l'auteur" />
-         <p>Je m'appelle Jean Dupont, passionné par l'écriture et le partage de connaissances.
-             Avec plusieus années d'expériences dans le domaine, je souhaite offrir du contenue de qualité à mes lecteurs.
-         </p>
-        </section>
-
-        <section class="expertise">
-            <h2>Mon parcours</h2>
-            <p>Diplomé en communicationet journaliste depuis 10 ans, je couvre des sujets variés allant de la technologie à la culture.</p>
+        <section class="author">
+            <div class="author-img">
+                <img src="photo-auteur.jpg" alt="photo de l'auteur">
+            </div>
+            <div class="author-info">
+                <h2>Qui suis-je ?</h2>
+                <p>
+                    Je suis un passioné de technologie, de culture et de communication. J'ai décidé de créer ce blog pour partager ma vision du monde.
+                </p>
+                <p>
+                    Expert en création de contenu, web design et reflexion critique, je veux faire de ce blog un espace vivant et inspirant pour les lecteurs
+                </p>
+            </div>
         </section>
     </main>
-
     <footer>
+        <p>&copy; 2025 Mon Blog. Tous droits réservés.</p>
         <nav>
             <ul>
-                <li><a href="#">Mentions légales</a></li>
-                <li><a href="#">Politique de confidentialité</a></li>
-                <li><a href="#">Plan du site</a></li>
-            </ul>
+                <li><a href="index.html">Accueil</a></li>
+                 <li><a href="about.html">À propos</a></li>
+                  <li><a href="contact.html">contact</a></li>
+                  </ul>
         </nav>
-        <p>&copy; 2025 Mon Blog - Tous droits réservés</p>
     </footer>
 </body>
 </html>
